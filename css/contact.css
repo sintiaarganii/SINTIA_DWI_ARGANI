@@ -1,0 +1,88 @@
+/* bg bagian body dari slide contact */
+/* untuk mengatur backgorund video */
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 800vh;
+    z-index: -1;
+    overflow: hidden;
+    /* Mencegah video terlihat di luar area latar belakang */
+}
+
+#my-video {
+    width: 100vw;
+    /* Agar video memenuhi lebar video-background */
+    height: 100vh;
+    /* Agar video memenuhi tinggi video-background */
+    object-fit: cover;
+    /* Agar video diatur sesuai aspek rasio dan memenuhi seluruh area video-background */
+}
+
+.container-contact {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 60px;
+    background-color: rgba(227, 142, 77, 0.4);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* css untuk contact */
+h2 {
+    text-align: center;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select[name],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+/* css untuk button */
+button {
+    background-color: chocolate;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e88e10;
+}
+
+/* ========================================================================== */
+/* ================== RESPONSIVE ========================================== */
+
+@media screen and (max-width: 670px) {
+    .container-contact {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container-contact {
+        width: 50%;
+    }
+}

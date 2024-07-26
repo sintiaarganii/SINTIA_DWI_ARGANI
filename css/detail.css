@@ -1,0 +1,129 @@
+/* untuk mengatur backgorund video */
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 800vh;
+    z-index: -1;
+    overflow: hidden;
+    /* Mencegah video terlihat di luar area latar belakang */
+}
+
+#my-video {
+    width: 100vw;
+    /* Agar video memenuhi lebar video-background */
+    height: 100vh;
+    /* Agar video memenuhi tinggi video-background */
+    object-fit: cover;
+    /* Agar video diatur sesuai aspek rasio dan memenuhi seluruh area video-background */
+}
+
+/* ====================== untuk mengatur isi dari content detail ========================== */
+/* untuk containernya */
+.box {
+    padding: 80px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+/* untuk mengatur benderanya */
+.country-flag-dit {
+    width: 37%;
+    margin-left: -65%;
+}
+
+/* untuk mengatur content si detailnya*/
+.cont-text {
+    text-align: center;
+    background-color: rgba(248, 207, 140, 0.6);
+    padding: 1%;
+    border-radius: 20px;
+    margin-top: -29%;
+    width: 40%;
+    margin-left: 50%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(150, 91, 54, 0.8);
+}
+
+/* untuk mengatur nama negaranya */
+h6{
+    font-size: 20px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+/* untuk mengatatur artikel yg dibawah bendera dan detail */
+.desc {
+    background-color: rgb(255, 228, 196, 0.7);
+    font-size: 20px;
+}
+
+ /* ========================================================================== */
+/* ================== RESPONSIVE ========================================== */
+@media screen and (max-width: 770px) {
+    .country-flag-dit {
+    width: 40%;
+    height: 40%;
+    margin-top: -0%;
+    }
+    .cont-text {
+        margin-top: -29%;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .country-flag-dit {
+    width: 60%;
+    height: 60%;
+    }
+    .cont-text {
+        width: 60%;
+        font-size: 15px;
+        margin-top: -47%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .country-flag-dit {
+    width: 65%;
+    height: 70%;
+    }
+    .cont-text {
+        width: 60%;
+        font-size: 10px;
+        margin-top: -47%;
+    }
+    .desc{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .country-flag-dit {
+    width: 140%;
+    height: 70%;
+    margin-left: -17%;
+    }
+    .cont-text {
+        width: 100%;
+        font-size: 15px;
+        margin-left: 0%;
+        margin-top: 20%;
+        padding: 10%;
+        font-size: 10px;
+    }
+    .desc {
+        font-size: 10px;
+        padding: 3%;
+        width: 200%;
+    }
+}

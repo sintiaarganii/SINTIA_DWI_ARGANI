@@ -1,0 +1,233 @@
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    /* Mencegah video terlihat di luar area latar belakang */
+}
+
+#my-video {
+    width: 100%;
+    /* Agar video memenuhi lebar video-background */
+    height: 100%;
+    /* Agar video memenuhi tinggi video-background */
+    object-fit: cover;
+    /* Agar video diatur sesuai aspek rasio dan memenuhi seluruh area video-background */
+}
+
+article {
+    text-align: center;
+}
+
+section {
+    vertical-align: top;
+    width: 90%;
+    border-radius: 10px;
+    background-color: rgba(231, 152, 96, 0.6);
+    display: flex;
+    margin-top: 20px;
+    margin-left: 3%;
+    padding: 25px;
+
+
+}
+
+section p {
+    width: 70%;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+section img {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+section img:hover {
+    top: 500px;
+    transform: scale(1.1);
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button {
+    margin-top: 30px;
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: rgb(210, 105, 20, 0.5);
+}
+
+button:hover {
+    background-color: chocolate;
+}
+
+/* ========================================================================== */
+/* ================== RESPONSIVE ========================================== */
+@media screen and (max-width: 840px) {
+    section p{
+        margin-top: 8%;
+        font-size: 15px;
+        margin-left: 20%;
+    }
+    button{
+        width: 40%;
+        height: 15%;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    section img {
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+    }
+    section p{
+        font-size: 10px;
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+    button{
+        width: 150px;
+        height: 40px;
+        margin-top: 15px;
+    }
+}
+
+
+@media screen and (max-width: 530px) {
+    section img {
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+    }
+    section p{
+        font-size: 10px;
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+    button{
+        width: 150px;
+        height: 40px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    section{
+        margin-left: 0%;
+        padding: 5%;
+    }
+    section img {
+        height: 150px;
+        width: 150px;
+        border-radius: 10px;
+    }
+    section p{
+        font-size: 10px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    button{
+        width: 100px;
+        height: 30px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    section{
+        margin-left: 0%;
+    }
+    section img {
+        height: 150px;
+        width: 150px;
+        border-radius: 10px;
+    }
+    section p{
+        width: 50%;
+        font-size: 15px;
+        margin-left: 30%;
+        margin-top: 20px;
+    }
+    button{
+        width: 100px;
+        height: 30px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .top-cont h1{
+        font-size: 20px;
+    }
+    .top-cont p{
+        font-size: 10px;
+    }
+    section{
+        width: 82%;
+        margin-left: 0%;
+    }
+    section img {
+        margin-left: 30%;
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+    }
+    section p{
+        width: 300%;
+        font-size: 10px;
+        margin-left: -160px;
+        margin-top: 140px;
+    }
+    button{
+        width: 80px;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: -180px;
+    }
+    button a{
+        font-size: 10px;
+    }
+}
+
+/* @media screen and (max-width: 163px) and (max-height: 198px) {
+    section img {
+        margin-left: 18%;
+        height: 80px;
+        width: 80px;
+        border-radius: 10px;
+        margin-bottom: -10%;
+    }
+    section p{
+        width: 200%;
+        font-size: 8px;
+        margin-left: -260%;
+        margin-top: 220%;
+    }
+
+} */

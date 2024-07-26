@@ -1,0 +1,54 @@
+/* css untuk about */
+/* Mengatur latar belakang halaman dengan gambar */
+body {
+    background-image: url(../assets/bg-1.webp);
+    /* Menetapkan gambar latar belakang untuk elemen body */
+}
+
+/* Mengatur margin kiri untuk elemen section */
+section {
+    margin-left: 18%;
+}
+
+/* Mengatur gaya untuk elemen dengan kelas section-article-p */
+.section-article-p {
+    text-align: center;
+    width: 50%;
+    margin: 10%;
+    background-color: rgba(158, 117, 65, 0.5);
+    padding: 3%;
+    border-radius: 5px;
+    color: white;
+}
+
+/* ========================================================================== */
+/* ================== RESPONSIVE ========================================== */
+
+@media screen and (max-width: 840px) {
+    .section-article-p {
+        width: 75%;
+        margin-left: 0%;
+    }
+}
+
+@media screen and (min-width: 520px) and (max-width: 620px) {
+    .section-article-p {
+        font-size: 10px;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .section-article-p {
+        font-size: 10px;
+        width: 90%;
+        margin-left: 2%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .section-article-p {
+        font-size: 10px;
+        margin-left: -10%;
+    }
+}

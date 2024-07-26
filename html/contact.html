@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+    <!-- bagian untuk menampilkan bg video -->
+    <div id="video-background">
+        <video autoplay muted loop id="my-video">
+            <source src="/assets/4878177-hd_1920_1080_30fps.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- bagian navigasi -->
+    <nav>
+        <span>EarthlyExcursions.com</span>
+        <a href="../html/index.html" title="Home">Home</a>
+        <a href="../html/contact.html" title="Contact">Contact</a>
+        <a href="../html/country.html" title="Country">Country</a>
+        <a href="../html/about.html" title="About">About</a>
+    </nav>
+
+    <!-- container untuk sebuah pesan -->
+    <div class="container-contact">
+        <h2>Contact Us</h2>
+        <!-- untuk inputan nama -->
+        <form id="contactForm" onsubmit="validateForm(event)">
+            <div class="form-control">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" required placeholder="Type Your Name">
+                <span class="error" id="nameError"></span>
+            </div>
+            <!-- untuk inputan email -->
+            <div class="form-control">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required placeholder="Type Your Email">
+                <span class="error" id="emailError"></span>
+            </div>
+            <!-- untuk option/pilihan dari negara mana -->
+            <div>
+                <label for="country">Select Your Country : </label>
+                <select name="country">
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="">Afghanistan</option>
+                    <option value="">Albania</option>
+                    <option value="">ALgeria</option>
+                    <option value="">America Samoa</option>
+                    <option value="">Andorra</option>
+                    <option value="">Angola</option>
+                    <option value="">Aguilla</option>
+                    <option value="">Antartica</option>
+                    <option value="">Antigua and Barbuda</option>
+                    <option value="">Argentina</option>
+                    <option value="">Armenia</option>
+                    <option value="">Aruba</option>
+                    <option value="">Australia</option>
+                    <option value="">Austria</option>
+                    <option value="">Azerbazian</option>
+                    <option value="">BAhamas</option>
+                    <option value="">Bangladesh</option>
+                    <option value="">Barbados</option>
+                    <option value="">Belgium</option>
+                    <option value="">Belzie</option>
+                    <option value="">Benin</option>
+                    <option value="">Bermuda</option>
+                    <option value="">Bhutan</option>
+                    <option value="">Bolivia</option>
+                    <option value="">Botswana</option>
+                    <option value="">Brazil</option>
+                    <option value="">Bulgaria</option>
+                    <option value="">Burundi</option>
+                    <option value="">Canada</option>
+                    <option value="">China</option>
+                    <option value="">Colombia</option>
+                    <option value="">Denmark</option>
+                    <option value="">Dominica</option>
+                    <option value="">Indonesia</option>
+                    <option value="">Jamaica</option>
+                    <option value="">Jepang</option>
+                    <option value="">Jerman</option>
+                    <option value="">Korea</option>
+                    <option value="">Laos</option>
+                    <option value="">Lebanon</option>
+                    <option value="">Liberia</option>
+                    <option value="">Luxembourgh</option>
+                    <option value="">Monaco</option>
+                    <option value="">Myanmar</option>
+                    <option value="">Malaysia</option>
+                    <option value="">Nepal</option>
+                    <option value="">Poland</option>
+                    <option value="">Perancis</option>
+                    <option value="">Rusia</option>
+                    <option value="">San Marino</option>
+                    <option value="">Singapore</option>
+                    <option value="">Turkey</option>
+                    <option value="">United Kingdom (UK)</option>
+                    <option value="">United States America (USA)</option>
+                    <option value="">Vietnam</option>
+                    <option value="">Zimbabwe</option>
+                </select>
+            </div>
+            <!-- untuk inputan pesan yang akan dikirimkan -->
+            <div class="form-control">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Send Your Message"></textarea>
+            </div>
+            <button type="submit" class="button-submit">Submit</button>
+
+        </form>
+    </div>
+
+    <!-- bagian footer -->
+    <footer>
+        <div class="box-footer">
+            <div class="nav-info-p">
+                <h4>Informasi</h4>
+                <p>Webiste ini dibuat oleh sintia untuk project UAS web dengan menggunakan HTML, JS, dan juga CSS</p>
+            </div>
+            <div class="medsos">
+                <h5>Our Media Social</h5>
+                <img src="https://cdn-icons-png.flaticon.com/128/6422/6422213.png" alt=""><a href="#">WhatsApp</a>
+                <br><img src="https://cdn-icons-png.flaticon.com/128/3916/3916611.png" alt=""><a href="#">Email</a>
+                <br><img src="https://cdn-icons-png.flaticon.com/128/6422/6422200.png" alt=""><a href="#">Instagram</a>
+                <br><img src="https://cdn-icons-png.flaticon.com/128/6422/6422199.png" alt=""><a href="#">FaceBook</a>
+
+            </div>
+            <div class="link">
+                <h5>Fakta-fakta Unik Dunia</h5>
+                <a href="https://www.scribd.com/document/318376170/272-Fakta-Unik-Dari-Seluruh-Dunia"
+                    target="_blank">scbrid</a>
+                <br><a
+                    href="https://website.minurispasirian.sch.id/read/4/5-fakta-unik-dunia-sains-yang-jarang-diketahui-orang-pernah-baca-salah-satunya"
+                    target="_blank">minurispasirian</a>
+                <br><a
+                    href="https://www.detik.com/edu/detikpedia/d-7355879/10-fakta-unik-yang-jarang-diketahui-termasuk-ayam-bisa-hidup-tanpa-kepala"
+                    target="_blank">detik.com</a>
+                <br><a href="https://www.merdeka.com/jateng/6-fakta-menarik-dunia-jarang-diketahui-125700-mvk.html"
+                    target="_blank">merdeka.com</a>
+            </div>
+        </div>
+        <div class="copy-footer">
+            <p>&copy; EarthlyExcursions.com. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- pemanggilan file js dengan nama contact js -->
+    <script src="../js/contact.js"></script>
+</body>
+
+</html>

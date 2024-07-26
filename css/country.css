@@ -1,0 +1,212 @@
+/* Mengatur latar belakang halaman dengan gambar */
+body {
+  background-image: url(../assets/bg-1.webp);
+  /* Menetapkan gambar latar belakang untuk elemen body */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* css untuk country/bendera */
+.box {
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-country {
+  margin: 1%;
+  display: grid;
+  grid-template-columns: repeat(6, 190px);
+  gap: 14px;
+  justify-content: start;
+}
+
+.country-flag {
+  width: 90%;
+  height: 80%;
+  transition: transform 0.3s;
+  padding-bottom: 10%;
+}
+
+.country-flag:hover {
+  top: 50%;
+  transform: scale(1.2);
+
+  .country-detail {
+    display: none;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+  }
+}
+
+.container-text {
+  background-color: rgba(250, 235, 215, 0.5);
+  display: none;
+  padding: 10%;
+  border-radius: 10px;
+  font-size: 13px;
+  text-align: justify;
+  margin-top: 2%;
+}
+
+.country-name{
+  text-align: center;
+  font-size: 17px;
+  /* font-weight: 400px; */
+}
+
+.country-detail.show {
+  display: block;
+}
+
+.country-card {
+  display: inline-block;
+  text-align: center;
+  margin: 5%;
+}
+
+
+/* css untuk fitur search */
+.search-box {
+  text-align: center;
+  background-color: rgba(208, 119, 56, 0.8);
+  width: 20%;
+  height: 5%;
+  padding: 10px 15px;
+  border-radius: 50px;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: none;
+  flex: 1;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.search-box img {
+  width: 60%;
+  height: 50%;
+  margin-bottom: 10%;
+}
+
+.search-box ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-box input::placeholder {
+  color: black;
+}
+
+/* ========================================================================== */
+/* ================== RESPONSIVE ========================================== */
+@media screen and (min-width: 1440px) {
+  .container-country {
+    margin-top: 50px;
+    grid-template-columns: repeat(7, 190px);
+  }
+  .search-box {
+    width: 20%;
+  }
+
+}
+
+@media screen and (max-width: 1040px) {
+  .container-country {
+    margin-top: 50px;
+    grid-template-columns: repeat(5, 190px);
+  }
+  .search-box {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .container-country {
+    margin-top: 50px;
+    grid-template-columns: repeat(4, 175px);
+  }
+  .country-flag{
+    width: 90%;
+  }
+  .search-box {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .container-country {
+    margin-top: 50px;
+    grid-template-columns: repeat(3, 190px);
+  }
+  .search-box {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .container-country {
+    margin-top: 50px;
+    grid-template-columns: repeat(2, 190px);
+  }
+  .country-flag{
+    width: 80%;
+  }
+  .country-name{
+    font-size: 15px;
+  }
+  .search-box {
+    width: 40%;
+  }
+  .search-box input::placeholder {
+    color: black;
+    font-size: 10px;
+    margin-bottom: 40%;
+  }
+  .search-box img {
+    width: 60%;
+    height: 50%;
+    margin-top: 50%;
+  }
+
+}
+
+@media screen and (max-width: 321px) {
+  .container-country {
+    margin-top: 50px;
+    margin-left: 20%;
+    grid-template-columns: repeat(1, 190px);
+  }
+  .search-box {
+    width: 40%;
+    height: 0%;
+  }
+  .search-box input::placeholder {
+    color: black;
+    font-size: 9px;
+    margin-bottom: 40%;
+  }
+  .search-box img {
+    width: 60%;
+    height: 50%;
+    margin-top: 50%;
+  }
+  
+}
